@@ -138,9 +138,9 @@ android {
 
 configurations.all {
     exclude group: 'com.facebook.yoga', module: 'yoga'
-    exclude group: 'com.facebook.litho', module: 'litho-annotations'
+    exclude group: 'com.facebook.infer.annotation', module: 'infer-annotation'
+    exclude group: 'com.google.code.findbugs', module: 'jsr305'
     resolutionStrategy {
-        force 'com.google.code.findbugs:jsr305:1.3.9'
         force 'com.android.support:appcompat-v7:26.+'
         force 'com.android.support:support-compat:26.+'
         force 'com.android.support:support-core-ui:26.+'
